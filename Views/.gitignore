@@ -1,0 +1,11 @@
+# VS Code settings
+.vscode/
+
+# Node modules directory
+node_modules/
+
+# Configuration files
+config/
+
+# Environment variables
+.env

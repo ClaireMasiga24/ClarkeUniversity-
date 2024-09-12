@@ -1,0 +1,58 @@
+doctype html
+html
+  head
+    title CIU Student Application Form
+    link(rel='stylesheet', href='/CSS/style.css')
+  body
+    .container
+      .form-container
+        h1 Student Application Form
+        form(action="/submit", method="POST")
+          label(for="firstName") First Name *
+          input(type="text" id="firstName" name="firstName" required)
+          
+          label(for="lastName") Last Name *
+          input(type="text" id="lastName" name="lastName" required)
+
+          label(for="course") Course *
+          select(name="course" id="course" required)
+            option(value="") -- Select --
+            option(value="Computer Science") Computer Science
+            option(value="Information Technology") Information Technology
+            // Add more courses as needed
+
+          label(for="entryScheme") Entry Scheme *
+          select(name="entryScheme" id="entryScheme" required)
+            option(value="") -- Select --
+            option(value="Direct Entry") Direct Entry
+            option(value="Diploma Entry") Diploma Entry
+            // Add more schemes as needed
+
+          label(for="intake") Intake *
+          select(name="intake" id="intake" required)
+            option(value="") -- Select --
+            option(value="January") January
+            option(value="May") May
+            option(value="September") September
+
+          label(for="sponsorship") Sponsorship *
+          select(name="sponsorship" id="sponsorship" required)
+            option(value="") -- Select --
+            option(value="Government") Government
+            option(value="Private") Private
+
+          label Gender *
+          input(type="radio" name="gender" value="Male" id="male" required)
+          label(for="male") Male
+          input(type="radio" name="gender" value="Female" id="female")
+          label(for="female") Female
+
+          label(for="dob") Date of Birth
+          input(type="date" name="dob" id="dob" required)
+
+          label(for="residence") Residence
+          input(type="text" name="residence" id="residence" required)
+
+          button(type="submit") Submit
+
+    script(src='/scripts.js')

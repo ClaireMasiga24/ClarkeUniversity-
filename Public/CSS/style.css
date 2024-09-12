@@ -1,0 +1,72 @@
+/* General container for the form */
+.container {
+    display: flex;             /* Enables the split layout */
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;             /* Full height of the viewport */
+    box-sizing: border-box;
+  }
+  
+  /* Left container for the logo */
+  .left-container {
+    width: 40%;               /* Occupy 40% of the width */
+    background-color: #004d40; /* Dark green background */
+    display: flex;
+    align-items: center;       /* Center vertically */
+    justify-content: center;   /* Center horizontally */
+  }
+  
+  .left-container img {
+    width: 70%;                /* Adjust logo size */
+    max-width: 300px;
+  }
+  
+  /* Right container for the form */
+  .right-container {
+    width: 60%;                /* Occupy 60% of the width */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;   /* Form background */
+  }
+  
+  .right-container h1 {
+    text-align: center;
+    color: #004d40;            /* CIU's theme color */
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  form label {
+    flex-basis: 48%;           /* Each label/input takes up 48% of the width */
+    margin-bottom: 15px;
+  }
+  
+  form input, form select {
+    flex-basis: 48%;           /* Same as label */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #004d40; /* CIU green */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #00796b; /* Slightly lighter green on hover */
+  }
+  
